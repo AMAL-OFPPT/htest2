@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonSite.ma</title>
+</head>
+
+<style>
+    form {
+        margin-left: 10px;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <main>
+        <header>
+            <img height="150px" width="100%" src="https://www.bu.edu/met/files/2020/09/mscis-cn-hero-1200x500.jpg" alt="">
+          
+        </header>
+        <h3 style="text-align: center;background-color: rgb(146, 206, 68);">
+            Differents formulaires HTML
+        </h3>
+        <section style="border: 2px;width: 45%;float: left;padding: 10px;">
+            <section style="border: 3px; background-color: aqua;">
+                <h3 style="text-align: center;font-size: 14px;"> Choix de filiére </h3> <br>
+                <form>
+                    <input type="radio" id="mobile" name="filiere" value="mobile">
+                    <label for="mobile">Dev Mobile</label><br>
+                    <input type="radio" id="full" name="filiere" value="full">
+                    <label for="full">FullStack</label><br>
+                    <input type="radio" id="rv_ra" name="filiere" value="rv_ra">
+                    <label for="rv_ra">RV/RA</label> <br> <br>
+                    <button style="color: cornflowerblue;margin-left: 220px; margin-bottom: 10px;"> enregister</button>
+                </form>
+            </section>
+
+            <hr style="width: 2px;color: brown;">
+            <section style="border: 3px; background-color: rgb(179, 255, 0);">
+                <h3 style="text-align: center;font-size: 14px;"> Choix de menu </h3> <br>
+                <form>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Salade</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Café</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Jus</label> <br> <br>
+                    <button style="color: cornflowerblue;margin-left: 220px; margin-bottom:10px ;"> enregister</button>
+                </form>
+            </section>
+
+            <hr style="width: 3px;">
+            <section style="border: 3px; background-color: #0ae2ff;">
+                <h3 style="text-align: center;font-size: 14px;"> S'inscrire </h3>
+                <form action="/action_page.php" >
+                    <label for="fname">Prenom:</label><br>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                    <label for="lname">Nom :</label><br>
+                    <input type="text" id="lname" name="lname" value=""><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" value=""><br>
+                    <label for="motpasse">Mot de passe:</label><br>
+                    <input type="password" id="motpasse" name="motpasse" value=""><br>
+                    <button style="color: cornflowerblue;margin-left: 220px; margin-bottom:10px ;"> enregister</button>
+                    
+                </form>
+            </section>
+        </section>
+        <section style="border: 2px;width: 45%;float: right;">
+            <section style="border: 3px; background-color: aqua;">
+                <h3 style="text-align: center;font-size: 14px;"> Choix de filiére </h3> <br>
+                <form>
+                    <label for="cars">Choisir votre filiére :</label>
+                    <select id="filiere" name="filieres" style="width: 200px;height: 30px; margin-bottom: 10px;" >
+                        <option value="Mobile">Dev mobile</option>
+                        <option value="FullStack">FullStack</option>
+                        <option value="RV_RA" selected>RV/RA</option>
+                    </select>
+                </form>
+            </section>
+
+            <hr style="width: 2px;color: brown;">
+            <section style="border: 3px; background-color: rgb(179, 255, 0);">
+                <h3 style="text-align: center;font-size: 14px;"> Laissez nous un commentaire </h3> <br>
+                <form>
+                    <label for="subject"> Sujet </label>
+                    <input type="text" name="subject" id="" style="margin-left: 25px;"> <br> <br>
+                    <label for="message"> Message </label> <br>
+                    <textarea name="message" rows="10" cols="30" style="margin-left:70px;">
+                        Laisser un commentaire 
+                        </textarea>
+                    <button style="color: cornflowerblue;margin-left: 220px; margin-bottom:10px ;">
+                        envoyer</button>
+                </form>
+            </section>
+
+            <hr style="width: 3px;">
+            <section style="border: 3px; background-color: #0ae2ff;">
+                <h3 style="text-align: center;font-size: 14px;"> </h3>
+                <form action="">
+                    <label for="Jus" style="margin-right: 13px;">Nos Jus : </label>
+                        <input list="Jus">
+                        <datalist id="Jus" style="width: 200px;">
+                            <option value="Jus d'orange" selected>
+                            <option value="Jus de pommes">
+                            <option value="Jus de dates">
+                        </datalist>
+                    </br> </br>
+                        <label for="pizza">Nos Pizzas : </label>
+                        <input list="pizza">
+                        <datalist id="pizza" style="width: 200px;">
+                            <option value="Pizza 1" selected>
+                            <option value="Pizza 2">
+                            <option value="Pizza 3">
+                            <option value="Pizza 4">
+                            <option value="Pizza 5">
+                        </datalist>
+                        <button style="color: cornflowerblue;margin-left: 220px; margin-bottom:10px ;"
+                            onclick="alert('Salam!')">
+                            enregister</button>
+                    </form>
+            </section>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
